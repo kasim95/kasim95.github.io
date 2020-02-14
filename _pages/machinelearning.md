@@ -15,4 +15,8 @@ header:
   {% for post in posts %}
     {% include archive-single.html %}
   {% endfor %}
+
+  ***
+
+  ***  
 {% endfor %}
