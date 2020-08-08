@@ -7,8 +7,6 @@ header:
 excerpt: "A simple catch and fall game developed with Unity Engine"
 ---
 
-### A simple catch and fall game developed with Unity Engine
-
 <style>
 .linebreak {
     border: 1px;
@@ -31,8 +29,9 @@ body {
     text-align: justify;
     font-size: 15px;
 }
-
 </style>
+
+### A simple catch and fall game developed with Unity Engine
 
 ---
 
@@ -49,6 +48,8 @@ Tools Used:
 
 <details>
 <summary>Project Directory Structure</summary>
+
+<div makrdown="1">
 
 ```bash
 📦Assets
@@ -168,7 +169,7 @@ Tools Used:
  ┃ ┣ 📜ScoreF.cs
  ┗ ┗ 📜ScoreG.cs
 ```
-
+</div>
 </details>
 
 ---
