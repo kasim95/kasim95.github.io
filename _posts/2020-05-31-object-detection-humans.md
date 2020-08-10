@@ -1,10 +1,10 @@
 ---
-title: "Detecting Humans in an image"
+title: "Object Detection - Humans"
 date: 2020-05-31
 tags: [deep learning, computer vision, artificial intelligence]
 header: 
     image: "/images/data_art.png"
-excerpt: "Object Detection of Humans using pretrained Darknet 53 YOLOv3 architecture"
+excerpt: "Object Detection of Persons in an image using pretrained Darknet 53 YOLOv3 architecture"
 ---
 
 
@@ -52,15 +52,20 @@ excerpt: "Object Detection of Humans using pretrained Darknet 53 YOLOv3 architec
     }
 
     code {
-        color: red;
+        color: #f25278;
     }
 
     b {
-        color: silver;
+        color: #f25278;
     }
 
     i {
-        color:silver;
+        color: #f25278;
+    }
+
+    body {
+        text-align: justify;
+        font-size: 18px;
     }
 
 </style>
@@ -474,5 +479,10 @@ As an FC Barcelona fan, I used multiple images of the dream team available on th
 <img style="width:20px; height:20px" src="" alt="FC Barcelona" >
 <img src="" alt="FC Barcelona" >
 
+---
 
-<a href="https://github.com/kasim95/Object_Detection_Humans" target="_blank">Github repo</a> 
+<b>Code Repository</b>
+
+Click <a href="https://github.com/kasim95/Object_Detection_Humans" target="_blank">here</a> to access the Github repository. 
+
+---

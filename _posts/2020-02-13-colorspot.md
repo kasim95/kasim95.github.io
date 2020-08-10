@@ -4,19 +4,10 @@ date: 2020-02-13
 tags: [unity, games, game development, C#]
 header:
   image: "/images/data_art.png"
-excerpt: "A simple catch and fall game developed with Unity Engine"
+excerpt: "A simple catch and fall game developed with Unity Engine & C#"
 ---
 
 <style>
-.linebreak {
-    border: 1px;
-    border-color: red;
-}
-
-code {
-    color: #f25278;
-}
-
 b {
     color: #f25278;
 }
@@ -31,153 +22,33 @@ body {
 }
 </style>
 
-### A simple catch and fall game developed with Unity Engine
+## A simple catch and fall game developed with Unity Engine & C#
+
+<b>Tools Used</b>
+<ul>
+    <li>Unity</li>
+    <li>C#</li>
+    <li>Adobe Illustrator</li>
+</ul>
 
 ---
 
-Tools Used:
-<ol>
-    <li><b>Unity</b></li> Used as the game engine.
-    <li><b>C#</b></li> Used to write scripts for components and event listeners in Unity.
-    <li><b>Visual Studio Code</b></li> Used as the editor for C#.
-    <li><b>Adobe Illustrator</b></li> Used to design the sprites, notes, backgrounds and other UI elements.
-    <li><b>Github</b></li> Used for version control.
-</ol>
-
----
-
-<details>
-<summary>Project Directory Structure</summary>
-
-<div makrdown="1">
-
-```bash
-📦Assets
- ┣ 📂Fonts
- ┃ ┣ 📜Simply Rounded.ttf
- ┣ 📂Music
- ┃ ┣ 📜(Music Box Remix) Pikmin - Forest of Hope.mp3
- ┃ ┣ 📜SelectionMusic.mp3
- ┣ 📂Physics Material
- ┃ ┣ 📂Prefabs
- ┃ ┃ ┣ 📜amber.prefab
- ┃ ┃ ┣ 📜amberbag.prefab
- ┃ ┃ ┣ 📜Angry_Raabbit.prefab
- ┃ ┃ ┣ 📜blue.prefab
- ┃ ┃ ┣ 📜bluebag.prefab
- ┃ ┃ ┣ 📜Cat.prefab
- ┃ ┃ ┣ 📜green.prefab
- ┃ ┃ ┣ 📜greenbag.prefab
- ┃ ┃ ┣ 📜magenta.prefab
- ┃ ┃ ┣ 📜magentabag.prefab
- ┃ ┃ ┣ 📜New_Flame_Amber.prefab
- ┃ ┃ ┣ 📜New_Flame_Blue.prefab
- ┃ ┃ ┣ 📜New_Flame_Green.prefab
- ┃ ┃ ┣ 📜New_Flame_Orange.prefab
- ┃ ┃ ┣ 📜New_Flame_Purple.prefab
- ┃ ┃ ┣ 📜New_Flame_Red.prefab
- ┃ ┃ ┣ 📜New_Flame_Teal.prefab
- ┃ ┃ ┣ 📜New_Flame_Violet.prefab
- ┃ ┃ ┣ 📜New_Flame_Yellow.prefab
- ┃ ┃ ┣ 📜orange.prefab
- ┃ ┃ ┣ 📜orangebag.prefab
- ┃ ┃ ┣ 📜purple.prefab
- ┃ ┃ ┣ 📜purplebag.prefab
- ┃ ┃ ┣ 📜rat_ball_amber.prefab
- ┃ ┃ ┣ 📜Rat_Ball_Blue.prefab
- ┃ ┃ ┣ 📜Rat_Ball_Green.prefab
- ┃ ┃ ┣ 📜Rat_Ball_Orange.prefab
- ┃ ┃ ┣ 📜Rat_Ball_Purple.prefab
- ┃ ┃ ┣ 📜Rat_Ball_Red.prefab
- ┃ ┃ ┣ 📜Rat_Ball_Teal.prefab
- ┃ ┃ ┣ 📜Rat_Ball_Violet.prefab
- ┃ ┃ ┣ 📜Rat_Ball_Yellow.prefab
- ┃ ┃ ┣ 📜red.prefab
- ┃ ┃ ┣ 📜redbag.prefab
- ┃ ┃ ┣ 📜Sad_Girl.prefab
- ┃ ┃ ┣ 📜Sword_Guy.prefab
- ┃ ┃ ┣ 📜teal.prefab
- ┃ ┃ ┣ 📜tealbag.prefab
- ┃ ┃ ┣ 📜yellow.prefab
- ┃ ┗ ┗ 📜yellowbag.prefab
- ┣ 📂Scenes
- ┃ ┣ 📜Level_1.unity
- ┃ ┣ 📜Level_2.unity
- ┃ ┣ 📜Level_3.unity
- ┃ ┣ 📜Level_Select.unity
- ┃ ┣ 📜Load User.unity
- ┃ ┣ 📜Menu2.unity
- ┃ ┣ 📜Settings.unity
- ┃ ┗ 📜Shop.unity
- ┣ 📂Screens
- ┃ ┣ 📂AI
- ┃ ┃ ┣ 📜ColorSpot_Frame.ai
- ┃ ┃ ┣ 📜ColorSpot_LevelSelector.ai
- ┃ ┃ ┣ 📜ColorSpot_Shop.ai
- ┃ ┃ ┣ 📜ColorSpot_Stage.ai
- ┃ ┃ ┣ 📜ColorSpot_StageEnd.ai
- ┃ ┃ ┣ 📜ColorSpot_StagePause.ai
- ┃ ┃ ┣ 📜ColorSpot_StartScreen.ai
- ┃ ┃ ┣ 📜ColorSpot_UserSelector.ai
- ┃ ┃ ┗ 📜ColorSpot_UserSelector_V2.ai
- ┃ ┣ 📂PNG
- ┃ ┃ ┣ 📜ColorSpot_LevelSelector.png
- ┃ ┃ ┣ 📜ColorSpot_Shop.png
- ┃ ┃ ┣ 📜ColorSpot_Stage.png
- ┃ ┃ ┣ 📜ColorSpot_StageEnd.png
- ┃ ┃ ┣ 📜ColorSpot_StagePause.png
- ┃ ┗ ┗ 📜ColorSpot_StartScreen.png
- ┣ 📂Scripts
- ┃ ┣ 📜AvatarChoice.cs
- ┃ ┣ 📜ChooseBackgrounds.cs
- ┃ ┣ 📜delayAudio.cs
- ┃ ┣ 📜DestroyOnContactA.cs
- ┃ ┣ 📜DestroyOnContactB.cs
- ┃ ┣ 📜DestroyOnContactBucket.cs
- ┃ ┣ 📜DestroyOnContactC.cs
- ┃ ┣ 📜GameController.cs
- ┃ ┣ 📜GameController2.cs
- ┃ ┣ 📜GameController3.cs
- ┃ ┣ 📜GameOver.cs
- ┃ ┣ 📜gameover1.cs
- ┃ ┣ 📜GameOver2.cs
- ┃ ┣ 📜GameOverPanel.cs
- ┃ ┣ 📜game_over2.cs
- ┃ ┣ 📜game_over3.cs
- ┃ ┣ 📜main_menu.cs
- ┃ ┣ 📜MenuScript.cs
- ┃ ┣ 📜MoveAvatar.cs
- ┃ ┣ 📜PauseMenu.cs
- ┃ ┣ 📜pause_level1.cs
- ┃ ┣ 📜pause_level2.cs
- ┃ ┣ 📜pause_level3.cs
- ┃ ┣ 📜ScoreA.cs
- ┃ ┣ 📜ScoreB.cs
- ┃ ┣ 📜ScoreC.cs
- ┃ ┣ 📜SelectMenu.cs
- ┃ ┣ 📜SelectMenuScript.cs
- ┃ ┣ 📜settings.cs
- ┃ ┣ 📜shop_script.cs
- ┃ ┣ 📜StayInside.cs
- ┃ ┃ 📜user_selection.cs
- ┃ ┣ 📜DestroyOnContactD.cs
- ┃ ┣ 📜DestroyOnContactE.cs
- ┃ ┣ 📜DestroyOnContactF.cs
- ┃ ┣ 📜DestroyOnContactG.cs
- ┃ ┣ 📜ScoreD.cs
- ┃ ┣ 📜ScoreE.cs
- ┃ ┣ 📜ScoreF.cs
- ┗ ┗ 📜ScoreG.cs
-```
-</div>
-</details>
-
----
-
-Being a guy who likes to play games mainly Battle Royale (BRs) & First Person Shooter (FPS) games, I was always curious about how Computer/Console games are made. Also, being a Computer Science student meant that I could learn Game Development as my career choice. Hence, I decided to learn Game Development in Spring 2019 to get familiar with the field of Game Development. After a week of research about various development environments available for games and programming languages used, my search narrowed down to two engines: Unity and Unreal Engine. Since Unity uses Javascript or C# for development, I decided to use Unity with C# for the Project. I worked in a team of 6 for this Project (More details about team members available on Github repo page). We decided to build an educational and fun to play, catch and fall video game and named it Colorspot. To make it more interesting and educational, we added different color pallettes for each level.  
+Being a guy who likes to play games mainly Battle Royale (BRs) & First Person Shooter (FPS) games, 
+I was always curious about how Computer/Console games are made. 
+Hence, I decided to learn Game Development in Spring 2019 to get familiar with the field of Game Development. 
+After a week of research about various development environments available for 
+games and programming languages used, my search narrowed down to two engines: 
+Unity and Unreal Engine. 
+Since Unity uses Javascript or C# for development, I decided to use Unity with C# for the Project. 
+I worked in a team of 6 for this Project (More details about team members available on Github repo page). We decided to build an educational and fun to play, catch and fall video game and named it Colorspot. To make it more interesting and educational, we added different color pallettes for each level.  
 My team and I decided to go with the Agile software development lifecycle and used Trello board to track use cases.
 
-After finishing the design stage, we decided to breakdown the development into two parts: Menu User Interface (UI) and Gameplay to make it easier to manage progress and to divide work amongst ourselves.
+The development stage was broken down into two parts: Menu User Interface (UI) and Gameplay.
+
+---
+
+<b> User Interface</b>
+
 The User Interface was split into five different scenes: 
 <ul>
     <li>
@@ -198,6 +69,8 @@ The User Interface was split into five different scenes:
     </li>
 </ul>
 
+<b>Gameplay</b>
+
 The Gameplay is divided into three scenes for three levels available:
 <ul>
     <li>Level 1</li>
@@ -208,13 +81,15 @@ Each level can be played for 60 seconds with a multiplier which increments after
 
 ---
 
+<b>Demo</b>
+
 The game demo is shown in the video below:
 <!--Add youtube video snippet here-->
 
 ---
 
-<a href="https://github.com/kasim95/Unity_Colorspot"> 
-    Github Repo
-</a>
+<b>Code Repository</b>
+
+Click <a href="https://github.com/kasim95/Unity_Colorspot" target="_blank">here</a> to view the Github repo.
 
 ---
