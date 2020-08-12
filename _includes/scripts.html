@@ -9,6 +9,9 @@
   {% endfor %}
 {% else %}
   <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+  
+  <!-- Added mod_outer_links.js file import for opening links in new tab (file created manually) -->
+  <script src="{{ '/assets/js/mod_outer_links.js' | absolute_url }}"></script>
   <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
 {% endif %}
 
