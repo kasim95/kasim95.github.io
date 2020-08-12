@@ -474,6 +474,11 @@ class PersonCounter():
                 )
 ~~~~
 <br />
+
+---
+
+<b>Demo</b>
+
 As an FC Barcelona fan, I used multiple images of the dream team available on the Internet under Creative Commons License to detect humans within the image.
 
 <img style="width:20px; height:20px" src="" alt="FC Barcelona" >
@@ -481,8 +486,10 @@ As an FC Barcelona fan, I used multiple images of the dream team available on th
 
 ---
 
-<b>Code Repository</b>
+<!--<b>Code Repository</b>
 
 Click <a href="https://github.com/kasim95/Object_Detection_Humans" target="_blank">here</a> to access the Github repository. 
 
 ---
+
+-->

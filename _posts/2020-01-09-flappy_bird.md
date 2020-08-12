@@ -96,13 +96,16 @@ The model was trained after every 10000 steps for a total of ~200,000 steps. Thi
 
 ---
 
-<b>Demo</b>
+<!--<b>Demo</b>-->
 
-This video shows a demo of bot playing the game.
 <!-- Add youtube video showing demo -->
 
+<!--
 ---
+-->
 
 <b>Code Repository</b>
 
 Click <a href="https://github.com/kasim95/Deep_Learning-Flappy_Bird.git" target="_blank">here</a> to view the Github repo.
+
+---
