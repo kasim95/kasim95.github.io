@@ -20,7 +20,7 @@ title                    : "Kasim Panjri"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Kasim Panjri"
-description              : "Data Science Portfolio"
+description              : "Computer Science Graduate Student"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "Kasim Panjri"
   avatar           : "/images/prof_pic.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Data Science Portfolio"
+  bio              : "Computer Science Graduate Student"
   location         : "Fullerton, CA"
   email            : "panjrikasim@gmail.com"
   links:
@@ -118,7 +118,7 @@ author:
       # url: mailto:panjrikasim@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://kasim95.github.io"
+      url: "https://www.kasimp.tech"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"

@@ -83,8 +83,7 @@ Each level can be played for 60 seconds with a multiplier which increments after
 
 <b>Demo</b>
 
-The game demo is shown in the video below:
-<!--Add youtube video snippet here-->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CNAdpm5gDwc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
