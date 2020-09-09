@@ -54,3 +54,11 @@ header:
 12. Deep Learning A-Z: Hands-On Artificial Neural Networks
     > SuperDataScience
     > <br><a target="_blank" href="https://www.udemy.com/course/deeplearning/">Course Page</a>&nbsp;&nbsp;<a href="https://www.udemy.com/certificate/UC-54b7d2d0-dd0b-4d1c-a872-1931117e800c/">Certificate</a>
+
+13. Natural Language Processing with Classification and Vector Spaces
+    > Deeplearning.ai
+    > <br><a target="_blank" href="https://www.coursera.org/learn/classification-vector-spaces-in-nlp">Course Page</a>&nbsp;&nbsp;<a href="https://coursera.org/share/77807c27c7733783d24838519fa08a1b">Certificate</a>
+
+14. Natural Language Processing with Probabalistic Models
+    > Deeplearning.ai
+     > <br><a target="_blank" href="https://www.coursera.org/learn/probabilistic-models-in-nlp">Course Page</a>&nbsp;&nbsp;<a href="https://coursera.org/share/c9129dc53222b00d7261475d1ec06901">Certificate</a>
