@@ -5,6 +5,7 @@ tags: [unity, games, game development, C#]
 header:
   image: "/images/data_art.png"
 excerpt: "A simple catch and fall game developed with Unity Engine & C#"
+classes: wide
 ---
 
 <style>

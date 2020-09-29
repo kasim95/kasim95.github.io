@@ -5,6 +5,7 @@ tags: [deep learning, games, computer vision, artificial intelligence]
 header:
   image: "/images/data_art.png"
 excerpt: "A Deep Learning bot to play Flappy Bird game"
+classes: wide
 ---
 
 <style>

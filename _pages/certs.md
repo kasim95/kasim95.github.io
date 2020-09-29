@@ -4,7 +4,8 @@ permalink: /certs/
 title: "Certifications"
 author-profile: true
 header:
-  image: "/images/data_art.png"
+  image: "/assets/images/bgs/tetris.png"
+  caption: "Photo credit: [**Skltwn**](http://simpledesktops.com/browse/desktops/2012/jan/25/tetis/)"
 ---
 1. The Data Scientist's Toolbox  
     > Johns Hopkins University

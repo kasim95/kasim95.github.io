@@ -5,6 +5,7 @@ tags: [deep learning, computer vision, artificial intelligence]
 header: 
     image: "/images/data_art.png"
 excerpt: "Object Detection of Persons in an image using pretrained Darknet 53 YOLOv3 architecture"
+classes: wide
 ---
 
 
