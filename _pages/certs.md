@@ -1,65 +1,29 @@
 ---
 layout: archive
 permalink: /certs/
-title: "Certifications"
+title: "Courses & Certifications"
 author-profile: true
 header:
   image: "/assets/images/bgs/tetris.png"
   caption: "Photo credit: [**Skltwn**](http://simpledesktops.com/browse/desktops/2012/jan/25/tetis/)"
+classes: wide
 ---
-1. The Data Scientist's Toolbox  
-    > Johns Hopkins University
-    > <br><a target="_blank" href="https://www.coursera.org/learn/data-scientists-tools">Course Page</a>
-    > &nbsp;&nbsp;<a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/FGTKAYALUHJU">Certificate</a>
 
-2. R Programming
-    > Johns Hopkins University
-    > <br><a target="_blank" href="https://www.coursera.org/learn/r-programming">Course Page</a>&nbsp;&nbsp;<a href="https://www.coursera.org/account/accomplishments/certificate/HB8PUAGSAVG6">Certificate</a>
+*"We cannot solve our problems with the same thinking we used when we created them"* - Albert Einstein
 
-3. Complete Python Bootcamp
-    > Jose Portilla
-    > <br><a target="_blank" href="https://www.udemy.com/course/complete-python-bootcamp/">Course Page</a>&nbsp;&nbsp;<a href="https://www.udemy.com/certificate/UC-HPC76IUM/">Certificate</a>
-
-4. Open Source tools for Data Science
-    > IBM Professional Certificate
-    > <br><a target="_blank" href="https://www.coursera.org/learn/open-source-tools-for-data-science">Course Page</a>&nbsp;&nbsp;<a href="https://www.coursera.org/account/accomplishments/certificate/WTXWATV6V4BD">Certificate</a>
-
-5. What is Data Science
-    > IBM Professional Certificate
-    > <br><a target="_blank" href="https://www.coursera.org/learn/what-is-datascience">Course Page</a>&nbsp;&nbsp;<a href="https://www.coursera.org/account/accomplishments/certificate/3FKQ7SA8QFRX">Certificate</a>
-
-6. Data Science Methodology
-    > IBM Professional Certificate
-    > <br><a target="_blank" href="https://www.coursera.org/learn/data-science-methodology">Course Page</a>&nbsp;&nbsp;<a href="https://www.coursera.org/account/accomplishments/certificate/YX7YMZC6JLUZ">Certificate</a>
-
-7. Data Analysis with Python
-    > IBM Professional Certificate
-    > <br><a target="_blank" href="https://www.coursera.org/learn/data-analysis-with-python">Course Page</a>&nbsp;&nbsp;<a href="https://coursera.org/share/f1991e5a1fae465b0da853b7ca975eb0">Certificate</a>
-
-8. How Google does Machine Learning
-    > Google Cloud
-    > <br><a target="_blank" href="https://www.coursera.org/learn/google-machine-learning">Course Page</a>&nbsp;&nbsp;<a href="https://www.coursera.org/account/accomplishments/certificate/QF7ZCLG3KQLG">Certificate</a>
-
-9. Google Cloud Platform Fundamentals: Core Infrastructure
-    > Google Cloud
-    > <br><a target="_blank" href="https://www.coursera.org/learn/gcp-fundamentals">Course Page</a>&nbsp;&nbsp;<a href="https://www.coursera.org/account/accomplishments/certificate/Y5NBYUB696MC">Certificate</a>
-
-10. Getting Started with AWS Machine Learning
-    > Amazon Web Services
-    > <br><a target="_blank" href="https://www.coursera.org/learn/aws-machine-learning">Course Page</a>&nbsp;&nbsp;<a href="https://coursera.org/share/be02e31bb36e9033f843ccb86ec02ab1">Certificate</a>
-
-11. AWS Computer Vision: Getting Started with GluonCV
-    > Amazon Web Services
-    > <br><a target="_blank" href="https://www.coursera.org/learn/aws-computer-vision-gluoncv">Course Page</a>&nbsp;&nbsp;<a href="https://coursera.org/share/9e8c1f8fec6b10492308c654bdf1c1b0">Certificate</a>
-
-12. Deep Learning A-Z: Hands-On Artificial Neural Networks
-    > SuperDataScience
-    > <br><a target="_blank" href="https://www.udemy.com/course/deeplearning/">Course Page</a>&nbsp;&nbsp;<a href="https://www.udemy.com/certificate/UC-54b7d2d0-dd0b-4d1c-a872-1931117e800c/">Certificate</a>
-
-13. Natural Language Processing with Classification and Vector Spaces
-    > Deeplearning.ai
-    > <br><a target="_blank" href="https://www.coursera.org/learn/classification-vector-spaces-in-nlp">Course Page</a>&nbsp;&nbsp;<a href="https://coursera.org/share/77807c27c7733783d24838519fa08a1b">Certificate</a>
-
-14. Natural Language Processing with Probabalistic Models
-    > Deeplearning.ai
-     > <br><a target="_blank" href="https://www.coursera.org/learn/probabilistic-models-in-nlp">Course Page</a>&nbsp;&nbsp;<a href="https://coursera.org/share/c9129dc53222b00d7261475d1ec06901">Certificate</a>
+No | Course | Issuing Organization | Course Page | Certificate | Skills/Tools learnt
+--- | --- | --- | --- | --- | ---
+1 | The Data Scientist's Toolbox | Johns Hopkins University | Coursera  <a target="_blank" href="https://www.coursera.org/learn/data-scientists-tools"><i class="fa fa-external-link-square-alt"></i></a> | <a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/FGTKAYALUHJU"><i class="fa fa-external-link-alt"></i></a> | R, RStudio, Git, Markdown 
+2 | R Programming | Johns Hopkins University | Coursera <a target="_blank" href="https://www.coursera.org/learn/r-programming"><i class="fa fa-external-link-square-alt"></i></a> | <a href="https://www.coursera.org/account/accomplishments/certificate/HB8PUAGSAVG6"><i class="fa fa-external-link-alt"></i></a> | R, RStudio
+3 | Complete Python Bootcamp | Jose Portilla | Udemy <a target="_blank" href="https://www.udemy.com/course/complete-python-bootcamp/"><i class="fa fa-external-link-square-alt"></i></a> | <a href="https://www.udemy.com/certificate/UC-HPC76IUM/"><i class="fa fa-external-link-alt"></i></a> | Python Programming
+4 | Open Source tools for Data Science | IBM Professional Certificate | Coursera <a target="_blank" href="https://www.coursera.org/learn/open-source-tools-for-data-science"><i class="fa fa-external-link-square-alt"></i></a> | <a href="https://www.coursera.org/account/accomplishments/certificate/WTXWATV6V4BD"><i class="fa fa-external-link-alt"></i></a> | R, RStudio, Git, IBM Watson Studio, Jupyter Notebooks, APIs, SSH (Secure Shell)
+5 | What is Data Science | IBM Professional Certificate | Coursera <a target="_blank" href="https://www.coursera.org/learn/what-is-datascience"><i class="fa fa-external-link-square-alt"></i></a> | <a href="https://www.coursera.org/account/accomplishments/certificate/3FKQ7SA8QFRX"><i class="fa fa-external-link-alt"></i></a> | Data Science domains, Big Data basics, Applications of Data Science
+6 | Data Science Methodology | IBM Professional Certificate | Coursera <a target="_blank" href="https://www.coursera.org/learn/data-science-methodology"><i class="fa fa-external-link-square-alt"></i></a> | <a href="https://www.coursera.org/account/accomplishments/certificate/YX7YMZC6JLUZ"><i class="fa fa-external-link-alt"></i></a> | Data Science/Machine Learning Project lifecycle
+7 | Data Analysis with Python | IBM Professional Certificate | Coursera <a target="_blank" href="https://www.coursera.org/learn/data-analysis-with-python"><i class="fa fa-external-link-square-alt"></i></a> | <a href="https://coursera.org/share/f1991e5a1fae465b0da853b7ca975eb0"><i class="fa fa-external-link-alt"></i></a> | Python, Data Preprocessing, Data Modelling, Exploratory Analysis, ANOVA (Analysis of Variance), Model Development for Regression & Classification, Pipelines
+8 | How Google does Machine Learning | Google Cloud | Coursera <a target="_blank" href="https://www.coursera.org/learn/google-machine-learning"><i class="fa fa-external-link-square-alt"></i></a> | <a href="https://www.coursera.org/account/accomplishments/certificate/QF7ZCLG3KQLG"><i class="fa fa-external-link-alt"></i></a> | Machine Learning in Google Products, Google Cloud Platform (BigQuery, Cloud Datalab, AI Platform Notebooks, Machine Learning APIs)
+9 | Google Cloud Platform Fundamentals: Core Infrastructure | Google Cloud | Coursera <a target="_blank" href="https://www.coursera.org/learn/gcp-fundamentals"><i class="fa fa-external-link-square-alt"></i></a> | <a href="https://www.coursera.org/account/accomplishments/certificate/Y5NBYUB696MC"><i class="fa fa-external-link-alt"></i></a> | Google Cloud Platform core services, Identity and Access Management (IAM), Compute Engine, GCP storage services, Google Cloud Machine Learning Platform
+10 | Getting Started with AWS Machine Learning | Amazon Web Services | Coursera <a target="_blank" href="https://www.coursera.org/learn/aws-machine-learning"><i class="fa fa-external-link-square-alt"></i></a> | <a href="https://coursera.org/share/be02e31bb36e9033f843ccb86ec02ab1"><i class="fa fa-external-link-alt"></i></a> | Machine Learning, AWS AI Services - Computer Vision (Rekognition, Deeplens) & NLP (Comprehend, Translate, Transcribe), Amazon Sagemaker
+11 | AWS Computer Vision: Getting Started with GluonCV | Amazon Web Services | Coursera <a target="_blank" href="https://www.coursera.org/learn/aws-computer-vision-gluoncv"><i class="fa fa-external-link-square-alt"></i></a> | <a href="https://coursera.org/share/9e8c1f8fec6b10492308c654bdf1c1b0"><i class="fa fa-external-link-alt"></i></a> | Python, AWS Machine Learning stack, Apache MXNet, Gluon, GluonCV
+12 | Deep Learning A-Z: Hands-On Artificial Neural Networks | SuperDataScience | Udemy <a target="_blank" href="https://www.udemy.com/course/deeplearning/"><i class="fa fa-external-link-square-alt"></i></a> | <a href="https://www.udemy.com/certificate/UC-54b7d2d0-dd0b-4d1c-a872-1931117e800c/"><i class="fa fa-external-link-alt"></i></a> | Python, Deep Learning, ANN, CNN, RNN, LSTM, SOM, Boltzmann Machine, AutoEncoder
+13 | Natural Language Processing with Classification and Vector Spaces | Deeplearning.ai | Coursera <a target="_blank" href="https://www.coursera.org/learn/classification-vector-spaces-in-nlp"><i class="fa fa-external-link-square-alt"></i></a> | <a href="https://coursera.org/share/77807c27c7733783d24838519fa08a1b"><i class="fa fa-external-link-alt"></i></a> | Python, Text Data Preprocessing, Sentiment Analysis (Logistic Regression & Naïve Bayes), Vector Space models
+14 | Natural Language Processing with Probabalistic Models | Deeplearning.ai | Coursera <a target="_blank" href="https://www.coursera.org/learn/probabilistic-models-in-nlp"><i class="fa fa-external-link-square-alt"></i></a> | <a href="https://coursera.org/share/c9129dc53222b00d7261475d1ec06901"><i class="fa fa-external-link-alt"></i></a> | Python, Part of Speech tagging, Hidden Markov models, Viterbi algorithm, N-grams, Word embeddings, Continuous bag of words (CBOW) model
