@@ -18,7 +18,7 @@ feature_row:
     btn_label: "Learn more"
   - url: /rreddit-444/
     title: "Rreddit 444"
-    excerpt: "A read only client for Reddit created using MERN stack"
+    excerpt: "A Reddit reader client created using MERN stack"
     image_path: "/assets/images/posts/rreddit444-1.jpg"
     alt: "Reddit reader"
     btn_label: "Learn more"
@@ -39,7 +39,8 @@ feature_row:
     btn_label: "Learn more"
   - url: /colorspot/
     title: "Colorspot"
-    excerpt: "A catch and fall game developed using Unity Engine, C# & Adobe Illustrator"
+    excerpt: "A catch game developed with Unity Engine, C# & Adobe Illustrator"
+    image_path: "/assets/images/posts/colorspot-1.jpg"
     alt: "Colorspot"
     btn_label: "Learn more"
   - title: "Graduate Admissions Dataset Analysis"
