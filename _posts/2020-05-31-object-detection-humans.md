@@ -1,10 +1,13 @@
 ---
-title: "Object Detection - Humans"
+title: "Object Detection in images"
 date: 2020-05-31
 tags: [deep learning, computer vision, artificial intelligence]
 header: 
-    image: "/images/data_art.png"
-excerpt: "Object Detection of Persons in an image using pretrained Darknet 53 YOLOv3 architecture"
+    overlay_color: "#ffffff"
+    overlay_image: "/assets/images/bgs/pattern_1.png"
+    overlay_filter: .4
+    caption: "Photo Credit: [**Lukas**](http://simpledesktops.com/browse/desktops/2015/jun/16/pattern/)"
+excerpt: "Recognizing humans in an image with bounding boxes using YOLOv3 architecture"
 classes: wide
 ---
 
@@ -52,9 +55,10 @@ classes: wide
         background-color: #f1f1f1;
     }
 
-    code {
+    /*code {
         color: #f25278;
     }
+    */
 
     b {
         color: #f25278;
@@ -71,43 +75,76 @@ classes: wide
 
 </style>
 
-Deep Learning has revolutionized the domain of Computer Vision. Over the years, research has proved successful to enable computers to mimic human perspective of the real world. This research has widened the scope of using Computer softwares for tasks which were otherwise tedious for humans thereby also reducing human error in such tasks. A good application of Computer Vision is to detect persons in a video or an image and monitor any suspicious activity used in highly secure rooms, for CCTV monitoring and for Sports Analysis. In case of Sports Analysis, player movements are traced to study their tactics and strategize for future games.
+Deep Learning has revolutionized the domain of Computer Vision. Over the years, research 
+has proved successful to enable computers to mimic human perspective of the real world. 
+This research has widened the scope of using Computer softwares for tasks which were 
+otherwise tedious for humans as a result also reducing human error. A good 
+application of Computer Vision is detecting humans in a video or an image to monitor 
+suspicious activities or study human behavior. In case of Sports Analysis, player 
+movements are traced to study their tactics and strategize for future games.
+
+This Project involved recognizing humans in an image with boundind boxes using a 
+pretrained YOLOv3 model based on Darknet 53 architecture.
 
 <b>Tools Used:</b>
-> * <i>Python 3.6.9</i>
-> * <i>Mxnet</i> 
+> * <i>Python 3</i>
+> * <i>Apache MXNet</i> 
 > * <i>GluonCV</i>
 > * <i>Matplotlib</i>
+> * <i>Jupyter Lab</i>
 
-Object Detection is a subdomain of Computer Vision in which objects present in a frame or image are represented using a rectangle otherwise known as a bounding box. Each of these bounding boxes can be represented using one of the following two formats:
+Object Detection is a subdomain of Computer Vision in which objects present in a frame 
+or image are represented using a rectangle otherwise known as a bounding box. Each of 
+these bounding boxes can be represented using one of the following two formats:
 
 1. Pascal-VOC bounding box: <i>(x-top left, y-top left, x-bottom-right, y-bottom-right)</i>
-> The (x-top-left, y-top-left) together give the absolute top-left point of the bounding box considering the top-left point of the image as the origin (0,0). The (x-bottom-right, y-bottom-right) give the absolute >bottom-right point of the image considering the top-left point of the image as the origin. 
-
+> The *(x-top-left, y-top-left)* together gives the Cartesian coordinates of top-left point 
+of the bounding box assuming the top-left point of the image as the origin (0,0). 
+The *(x-bottom-right, y-bottom-right)* give the Cartesian coordinates of the bottom-right 
+point of the image with the same assumptions.
 
 2. COCO bounding box: <i>(x-top-left, y-top-left, width, height)</i>
-> The x-top-left and y-top-left give the absolute top-left point of the bounding box considering the top-left point of the image as the origin (0,0). The width and height are then given relative to total width and height of image respectively. The COCO bounding box format is used for YOLO architectures. 
+> The *(x-top-left, y-top-left)* gives the Cartesian coordinates for top-left point of 
+the bounding box considering the top-left point of the image as the origin (0,0). 
+The *width* and *height* of the bounding boxare then given relative to total width 
+and height of the image respectively. The COCO bounding box format is used for 
+YOLO architectures. 
 
-
-Researchers successfully developed three different algorithms which can be used to detect objects in an image. 
+Researchers successfully developed three different algorithms for object detection as follows: 
 > * Regions with Convolutional Neural Networks (R-CNN)
 > * Single Shot Detector (SSD)
 > * You Look Only Once (YOLO)
 
+Each of these algorithms has its advantages and drawbacks. The Faster R-CNN with 
+Resnet 101 architecture pretrained on COCO dataset performs slower as compared to 
+YOLOv3 with Darknet 53 architecture. However the MAP (Mean Average Precision) score, 
+a metric used to compare Object Detection algorithms; is higher for R-CNN than YOLOv3 
+for COCO test dataset. This implies that YOLOv3 architecture can process more frames 
+per second with fairly lower accuracy whereas a Faster R-CNN architecture will process 
+less frames per second but with higher accuracy.
 
-Each of these algorithms has its advantages and drawbacks. The Faster R-CNN with Resnet 101 architecture pretrained on COCO dataset performs slower as compared to YOLOv3 with Darknet 53 architecture. However the MAP (Mean Average Precision) score, a metric used to compare Object Detection algorithms is higher for R-CNN than YOLOv3 for COCO test dataset. This implies that YOLOv3 architecture can process more frames per second with fairly lower accuracy whereas a Faster R-CNN architecture will process less frames per second but with higher accuracy.
+This Project involves detecting humans in an image with bounding boxes. An application 
+of this Project is to trace human movement in an environment from one frame to next used 
+in Sports Analysis to study movement of players and determine new tactics to strategize 
+for future games. Since the primary requirement for video analysis is to process higher 
+frames per second (atleast 30), I chose the YOLOv3 with Darknet 53 architecture for this
+Project.
 
-This Project involves detecting humans in an image with bounding boxes. An application of this Project is to trace human movement in an environment from one frame to next used in Sports Analysis to study movement of players and determine new tactics to strategize for future games. Since the primary requirement for video analysis is to process higher frames per second (atleast 30), I chose the YOLOv3 with Darknet 53 architecture for this Project.
+To implement the architecture, I used the Apache Mxnet API built on top of Pytorch. The 
+Mxnet API has its own implementation of ndarray similar to numpy ndarray. The Mxnet Gluon 
+CV library has a sophisticated Model Zoo with most popular Deep Learning architectures. 
+Having used Tensorflow 1.x,Tensorflow 2.x and Pytorch for Deep Learning Projects, I can 
+agree that Gluon CV has a more simpler and straightforward API to use pretrained models 
+than the formers. In this Project, I used the YOLOv3 with Darknet 53 architecture 
+pretrained on COCO dataset using the syntax below: 
+`model = gluoncv.model_zoo.get_model('yolo3_darknet53_coco, pretrained=True)`.
 
-To implement the architecture, I used the Apache Mxnet API built on top of Pytorch. The Mxnet API has its own implementation of ndarray similar to numpy ndarray. The Mxnet Gluon CV library has a sophisticated Model Zoo with most popular Deep Learning architectures. Having used Tensorflow 1.x,Tensorflow 2.x and Pytorch for Deep Learning Projects, I can agree that Gluon CV has a more simpler and straightforward API to use pretrained models than the formers. In this Project, I used the YOLOv3 with Darknet 53 architecture pretrained on COCO dataset using one line `model = gluoncv.model_zoo.get_model('yolo3_darknet52_coco, pretrained=True)`.
 
-<button type="button" id="coll_button" class="collapsible" onclick="toggleDivZoo()">Model zoo models</button>
-
-<!--<div class="content" id="coll_content">
-    <p> Hey </p>
-</div>-->
-
-
+<button 
+    type="button" 
+    id="coll_button" 
+    class="collapsible" 
+    onclick="toggleDivZoo()">GluonCV Model zoo pretrained architectures</button>
 <div class="content" id="coll_content">
     <ul>
         <li>resnet18_v1</li>
@@ -420,17 +457,140 @@ To implement the architecture, I used the Apache Mxnet API built on top of Pytor
     </ul>
 </div>
 
-<br />
-To streamline the whole process from loading image to detecting humans and counting the number of humans in the image, I created a `PersonCounter` class. Any raw image requires preprocessing to be used with the model.The shortest dimension of the image is downsized to 416px and the other dimension is downsized proportionally. Also, the pixel values of the original image as 8 bit integers (0-255) are scaled to 0-1 and then normalized using <b>mean</b> of <i>0.485, 0.456, 0.406</i> and <b>standard deviation</b> of <i>0.229, 0.224, 0.225</i> accross the three channels (RGB channels). The `PersonCounter` class contains three methods `set_threshold`, `count` and  `_visualize`. The `set_threshold` method is used to set the minimum confidence score in order for the detected bounding box to be counted as a prediction. If the confidence score of the bounding box is less than threshold value, it is not counted as a prediction. Since the raw image used to detect humans with the pretrained model is preprocessed using multiple transformations, the `_visualize` method comes in handy to draw predicted bounding boxes on the untransformed original image. 
-Finally, the `count` method runs the complete lifecycle of the Project from loading image, transforming the loaded image, detecting bounding boxes, visualizing bounding boxes and counting the number of people in the image. The code below shows the `PersonCounter` class and its methods. To keep the code readable and easy to debug, I used various helper functions such as `load_image`, `show_image`, `preprocess_image`, `detect`, `count_object` which can be found in the Github repo linked at the end of this document.
 
-~~~~python
+---
+<b>Code Walkthrough</b>
+
+```python
+import mxnet as mx
+from mxnet.gluon.data.vision import transforms
+import gluoncv as gcv
+from gluoncv import model_zoo, data, utils
+import os
+import matplotlib.pyplot as plt
+from pathlib import Path
+```
+
+
+```python
+cwd = Path()
+pathImages = Path(cwd, 'images')
+pathModels = Path(cwd, 'models')
+```
+
+
+```python
+model_name = 'yolo3_darknet53_coco'
+model = gcv.model_zoo.get_model(model_name, pretrained=True, root=pathModels)
+```
+
+### Helper Functions
+
+
+```python
+# read image as nd array
+def load_image(path):
+    return mx.nd.array(mx.image.imread(path))
+
+# display nd array image
+def show_image(array):
+    plt.imshow(array)
+    fig = plt.gcf()
+    fig.set_size_inches(12, 12)
+    plt.show()
+
+# preprocess image using normalization and resizing to predict objects for yolov3 model
+def preprocess_image(array):
+     return gcv.data.transforms.presets.yolo.transform_test(array)
+
+# detect objects within image using model
+def detect(_model, _data):
+    class_ids, scores, bounding_boxes = _model(_data)
+    return class_ids, scores, bounding_boxes
+
+# draw and display bounding boxes for detected objects on image
+def draw_bbs(unnorm_array, bounding_boxes, scores, class_ids, all_class_names):
+    ax = utils.viz.plot_bbox(unnorm_array, bounding_boxes, scores, class_ids, class_names=model.classes)
+    fig = plt.gcf()
+    fig.set_size_inches(12, 12)
+    plt.show()
+
+# count number of objects detected in image for an object_label
+def count_object(network, class_ids, scores, bounding_boxes, object_label, threshold=0.75):
+    target_idx = network.classes.index(object_label)
+    num_objects = 0
+    for i in range(len(class_ids[0])):
+        if class_ids[0][i].asscalar() == target_idx and scores[0][i].asscalar() >= threshold:
+            num_objects += 1
+    return num_objects
+    
+```
+
+### Load and display raw image
+
+```python
+image = load_image(Path(pathImages, '02.jpg'))
+show_image(image.asnumpy())
+```
+
+
+![png](/assets/images/posts/object_detection_humans/output_6_0.png)
+
+
+### Preprocess image
+
+```python
+norm_image, unnorm_image = preprocess_image(image)
+show_image(unnorm_image)
+```
+
+
+![png](/assets/images/posts/object_detection_humans/output_7_0.png)
+
+
+### Detect and draw bounding boxes on objects
+
+```python
+# Detect persons
+class_ids, scores, bounding_boxes = detect(model, norm_image)
+#
+draw_bbs(unnorm_array = unnorm_image, 
+         bounding_boxes=bounding_boxes[0], 
+         scores=scores[0], 
+         class_ids=class_ids[0], 
+         all_class_names=model.classes
+        )
+```
+
+
+![png](/assets/images/posts/object_detection_humans/output_8_0.png)
+
+
+To streamline the process of loading image, preprocessing, detecting inference and 
+counting the number of bounding boxes in the image, a `PersonCounter` class is used.
+Any raw image requires preprocessing to be used with the model. The shortest dimension 
+of the image is downsized to 416px and the other dimension is downsized proportionally. 
+Also, the pixel values of the original image as 8 bit integers (0-255) are scaled to 0-1 
+and then normalized using <b>mean</b> of <i>0.485, 0.456, 0.406</i> and <b>standard 
+deviation</b> of <i>0.229, 0.224, 0.225</i> accross the RGB channels. 
+The `PersonCounter` class contains three methods `set_threshold`, `count` 
+and  `_visualize`. The `set_threshold` method is used to set the minimum confidence 
+score in order for the detected bounding box to be counted as a prediction.
+Since the image is transformed before finding the inference on the model,
+the `_visualize` method comes in handy 
+to draw predicted bounding boxes on the raw untransformed image. 
+Finally, the `count` method is responsible for loading image, preprocessing it, 
+detecting objects & visualizing them using bounding 
+boxes, and finally counting the number of humans in the image. The code below shows 
+the `PersonCounter` class and its methods.
+
+```python
 class PersonCounter():
     def __init__(self, threshold):
         self._network = gcv.model_zoo.get_model(model_name, 
                                                 pretrained=True, 
                                                 root=pathModels
-                                            )
+                                               )
         self._threshold = threshold
 
     def set_threshold(self, threshold):
@@ -468,29 +628,87 @@ class PersonCounter():
     
     def _visualize(self, unnorm_image, class_ids, scores, bounding_boxes):
         draw_bbs(unnorm_array = unnorm_image, 
-                bounding_boxes=bounding_boxes[0], 
-                scores=scores[0], 
-                class_ids=class_ids[0], 
-                all_class_names=self._network.classes
+                 bounding_boxes=bounding_boxes[0], 
+                 scores=scores[0], 
+                 class_ids=class_ids[0], 
+                 all_class_names=self._network.classes
                 )
-~~~~
-<br />
+```
 
+
+```python
+counter = PersonCounter(threshold=0.6)
+
+images = ['01.jpeg', '02.jpg', '03.jpg', '04.jpg']
+for img in images:
+    print('Image name', img, sep=":")
+    counter.count(filepath=Path(pathImages, img), visualize=True)
+    print('*'*50+'\n\n')
+```
+
+    Image name:01.jpeg
+
+
+
+![png](/assets/images/posts/object_detection_humans/output_11_1.png)
+
+
+
+![png](/assets/images/posts/object_detection_humans/output_11_2.png)
+
+
+    4 people detected in images\01.jpeg with minimum 60.0 % confidence.
+    **************************************************
+    
+    
+    Image name:02.jpg
+
+
+
+![png](/assets/images/posts/object_detection_humans/output_11_4.png)
+
+
+
+![png](/assets/images/posts/object_detection_humans/output_11_5.png)
+
+
+    9 people detected in images\02.jpg with minimum 60.0 % confidence.
+    **************************************************
+    
+    
+    Image name:03.jpg
+
+
+
+![png](/assets/images/posts/object_detection_humans/output_11_7.png)
+
+
+
+![png](/assets/images/posts/object_detection_humans/output_11_8.png)
+
+
+    13 people detected in images\03.jpg with minimum 60.0 % confidence.
+    **************************************************
+    
+    
+    Image name:04.jpg
+
+
+
+![png](/assets/images/posts/object_detection_humans/output_11_10.png)
+
+
+
+![png](/assets/images/posts/object_detection_humans/output_11_11.png)
+
+
+    3 people detected in images\04.jpg with minimum 60.0 % confidence.
+    **************************************************
+    
+<!--
 ---
-
-<b>Demo</b>
-
-As an FC Barcelona fan, I used multiple images of the dream team available on the Internet under Creative Commons License to detect humans within the image.
-
-<img style="width:20px; height:20px" src="" alt="FC Barcelona" >
-<img src="" alt="FC Barcelona" >
-
----
-
-<!--<b>Code Repository</b>
+<b>Code Repository</b>
 
 Click <a href="https://github.com/kasim95/Object_Detection_Humans" target="_blank">here</a> to access the Github repository. 
-
----
-
 -->
+

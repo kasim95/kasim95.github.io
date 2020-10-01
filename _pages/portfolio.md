@@ -28,8 +28,9 @@ feature_row:
     alt: "ApexGO"
     btn_label: "Learn more"
   - url: /object-detection-humans/
-    title: "Object Detection - Humans"
-    excerpt: "Object Detection of humans in an image using pretrained Darknet 53 YOLOv3 architecture"
+    title: "Object Detection in Images"
+    excerpt: "Recognizing humans in an image with bounding boxes using pretrained YOLOv3 architecture"
+    image_path: "/assets/images/posts/object_detection_humans/output_11_11.png"
     alt: "Object Detection"
     btn_label: "Learn more"
   - url: /flappy_bird/
