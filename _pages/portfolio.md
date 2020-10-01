@@ -19,6 +19,7 @@ feature_row:
   - url: /rreddit-444/
     title: "Rreddit 444"
     excerpt: "A read only client for Reddit created using MERN stack"
+    image_path: "/assets/images/posts/rreddit444-1.jpg"
     alt: "Reddit reader"
     btn_label: "Learn more"
   - url: /apexgo/

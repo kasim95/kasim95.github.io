@@ -21,19 +21,20 @@ develop my foundational skills in programming
 and to specialize in the field of Data Science. 
 The many undergraduate courses taken at California State University 
 Fullerton (CSUF) before starting with my graduate courses has instilled 
-confidence in Data Structures and Algorithms. The numerous 
+confidence in Data Structures, Algorithms and Programming. The numerous 
 academic & personal <a href="/projects" target="_blank">projects</a> 
 and research performed during my five semesters at CSUF has 
 supported my growth in the field. While pursuing my Masters', I 
 landed a golden opportunity at ASML as a Data Analytics & Visualization
 Intern in Summer 2019. This opportunity allowed me to network and chat 
 with some of the best minds in the company and the Silicon industry. 
-This opportunity allowed me to perform Failure Analysis on the complicated
-EUV machines. I have always engaged myself in Continuous Learning to stay updated 
+My work involved performing Failure Analysis on the complicated
+EUV machines to forecast maintenance and hence reduce downtime. 
+I have always engaged myself in Continuous Learning to stay updated 
 professionally and personally evident from the 
 <a href="/certs" target="_blank">courses</a> I have completed. 
-I also believe that Data Science is not just Programming and/or Statistics 
-but the knowledge of the domain on which it is applied for. Hence, I 
+I also believe that Data Science does not just require Programming and/or Statistics Skills
+but also the knowledge of the domain on which it is applied for. Hence, I 
 have always strived to become a Generalist and not a Specialist.
 
 # Education:
