@@ -36,6 +36,7 @@ feature_row:
   - url: /flappy_bird/
     title: "Deep Learning - Flappy Bird"
     excerpt: "A Deep Learning agent to play Flappy Bird game"
+    image_path: "/assets/images/posts/flappy_bird-2.jpg"
     alt: "Deep Learning - Flappy Bird"
     btn_label: "Learn more"
   - url: /colorspot/
