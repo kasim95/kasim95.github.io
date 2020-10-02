@@ -39,13 +39,15 @@ body {
 }
 </style>
 
+<b>Code:</b> <a href="https://github.com/kasim95/Unity_Colorspot" target="_blank" style="color: black;">Github repo <i class="fab fa-github fa-lg"></i></a>
+
+---
+
 This project involved developing a catch game using Unity Engine and C# in a team of six.
 The visual assets for this project were created using Adobe Illustrator.
 The team members can be found on the Readme page of the Github repository.
 The development stage of the Project was broken down into two sections: 
 Menu User Interface (UI) and Gameplay.
-
----
 
 <b> User Interface</b>
 
@@ -121,11 +123,5 @@ Below are some screenshots for the game:
 <b>Demo</b>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CNAdpm5gDwc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
----
-
-<b>Code Repository</b>
-
-<a href="https://github.com/kasim95/Unity_Colorspot" target="_blank">Click here</a> to view the Github repository
 
 ---
