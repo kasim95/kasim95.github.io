@@ -14,6 +14,7 @@ feature_row:
   - url: /ocr_math/
     title: "Optical Character Recognition for Handwritten Mathematical Expressions"
     excerpt: "A Deep Learning Pipeline to recognize mathematical expressions from images"
+    image_path: "/assets/images/posts/ocr_math-1.png"
     alt: "OCR for Handwritten Math Expressions"
     btn_label: "Learn more"
   - url: /rreddit-444/
@@ -25,6 +26,7 @@ feature_row:
   - url: /apexgo/
     title: "ApexGO"
     excerpt: "A Go game agent developed using Reinforcement Learning, Supervised Learning and Monte Carlo Tree Search"
+    image_path: "/assets/images/posts/apexgo-1.jpg"
     alt: "ApexGO"
     btn_label: "Learn more"
   - url: /object-detection-humans/
@@ -47,6 +49,8 @@ feature_row:
     btn_label: "Learn more"
   - title: "Graduate Admissions Dataset Analysis"
     excerpt: "Performed analysis on the Graduate Admissions Kaggle dataset using Regression and Classification models"
+  - title: "Movie Recommendation System"
+    excerpt: "Performed Exploratory Analysis of Movielens dataset using Apache Spark and created a Movie Recommendation system"
 ---
 
 <!--Sorry. This page is under Construction...-->
