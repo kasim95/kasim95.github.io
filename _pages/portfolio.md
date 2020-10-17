@@ -35,12 +35,6 @@ feature_row:
     image_path: "/assets/images/posts/object_detection_humans/output_11_11.png"
     alt: "Object Detection"
     btn_label: "Learn more"
-  - url: /flappy_bird/
-    title: "Deep Learning - Flappy Bird"
-    excerpt: "A Deep Learning agent to play Flappy Bird game"
-    image_path: "/assets/images/posts/flappy_bird-2.jpg"
-    alt: "Deep Learning - Flappy Bird"
-    btn_label: "Learn more"
   - url: /colorspot/
     title: "Colorspot"
     excerpt: "A catch game developed with Unity Engine, C# & Adobe Illustrator"
